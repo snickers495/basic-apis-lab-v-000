@@ -14,4 +14,5 @@ class RepositoriesController < ApplicationController
       body = JSON.parse(resp.body)
       @results = body["items"]
       render 'search'
+    end
 end
